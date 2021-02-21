@@ -33,10 +33,10 @@
   /* flex-flow: column wrap; */
   /* flex-flow: column-reverse wrap; */
   /* justify-content: flex-start; */
-  justify-content:flex-end;
+  justify-content:flex-start;
   /* for align-content to work you must have more than 1 row */
   /* align-content: space-between; */
-  align-content: space-around;
+  align-content: space-between;
   
 }
 
@@ -48,3 +48,16 @@
 /* .container div:nth-child(2) {
   font-size: 40px;
 } */
+
+/* You can implement drag and drop using order */
+
+.container div:nth-child(2) {
+  order: -1
+}
+.container div:nth-child(5) {
+  order: 1
+}
+
+.container div:nth-child(3) {
+  order: 5
+}
