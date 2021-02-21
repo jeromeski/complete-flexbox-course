@@ -36,7 +36,7 @@
   justify-content:flex-start;
   /* for align-content to work you must have more than 1 row */
   /* align-content: space-between; */
-  align-content: space-between;
+  align-items: flex-start;
   
 }
 
@@ -52,12 +52,14 @@
 /* You can implement drag and drop using order */
 
 .container div:nth-child(2) {
-  order: -1
+  order: -1;
+  align-self: stretch;
 }
 .container div:nth-child(5) {
-  order: 1
+  order: 1;
+  
 }
 
 .container div:nth-child(3) {
-  order: 5
+  order: 5;
 }
