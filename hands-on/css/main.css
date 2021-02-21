@@ -38,7 +38,7 @@
   /* align-content: space-between; */
   /* align-items: flex-start; */
 
-  width: 400px;
+  width: 800px;
   
 }
 
@@ -46,8 +46,9 @@
   /* child elements will not listen via float, because flex is declared */
   float: right;
   /* width: 210px; */
-  width: 200px;
+  /* width: 150px; */
   margin: 0;
+  flex: 1 1 15%;
 
 }
 
@@ -58,7 +59,8 @@
 /* You can implement drag and drop using order */
 
 .container div:nth-child(2) {
-  flex-shrink: 9;
+  /* flex-shrink: 9; */
+  flex-grow: 2;
 }
 
 /* why flexbox items doesn't shrink? because you have too much content */
@@ -110,4 +112,17 @@ flexGrowTotal = 8;
 50+100 = 150px
 150+100 = 250px
 
+ */
+
+ /* 
+ flex-shrink
+ content,margins,padding will limit the amount your item to shrink 
+ */
+
+ /* 
+ flex basis
+ container has a) space left or b) is overflow
+ look at a) flex-grow and b) flex-shrink
+ calculate portions each items will grow/shrink
+ add that to the base size
  */
