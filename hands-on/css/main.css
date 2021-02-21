@@ -26,7 +26,7 @@
   /* align-items: baseline; */
 
   /* height: 300px; */
-  width: 800px;
+  /* width: 800px; */
   /* flex-wrap: wrap; */
   flex-flow: row;
   /* flex-flow: row-reverse wrap; */
@@ -37,15 +37,18 @@
   /* for align-content to work you must have more than 1 row */
   /* align-content: space-between; */
   /* align-items: flex-start; */
+
+  width: 400px;
   
 }
 
 .container div {
   /* child elements will not listen via float, because flex is declared */
   float: right;
-  width: 100px;
+  /* width: 210px; */
+  width: 200px;
   margin: 0;
-  flex-grow: 1;
+
 }
 
 /* .container div:nth-child(2) {
@@ -55,12 +58,14 @@
 /* You can implement drag and drop using order */
 
 .container div:nth-child(2) {
-  flex-grow: 3
+  flex-shrink: 9;
 }
+
+/* why flexbox items doesn't shrink? because you have too much content */
 
 
 .container div:nth-child(3) {
-  flex-grow: 3
+
 }
 
 /* Compute how flex grow is distributed
