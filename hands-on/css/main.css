@@ -1,3 +1,22 @@
 /* Your code goes here */
 
 
+.container {
+  display: flex;
+  /* float: right; */
+  /* border: 1px solid #fff; */
+
+  /* width should be 100% to overide float: right 
+  =================================*/
+  /* width: 100%; */
+
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  flex-direction: column-reverse;
+
+}
+
+.container div {
+  /* child elements will not listen via float, because flex is declared */
+  float: right
+}
