@@ -4,7 +4,7 @@
 .container {
   display: flex;
   /* float: right; */
-  /* border: 1px solid #fff; */
+  border: 1px solid #fff;
 
   /* width should be 100% to overide float: right 
   =================================*/
@@ -18,9 +18,19 @@
   /* justify-content: space-around; */
   justify-content: space-between;
 
+  height: 200px;
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  align-items: baseline;
+
 }
 
 .container div {
   /* child elements will not listen via float, because flex is declared */
   float: right
+}
+
+.container div:nth-child(2) {
+  font-size: 40px;
 }
